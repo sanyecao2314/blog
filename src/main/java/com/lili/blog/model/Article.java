@@ -16,6 +16,14 @@ public class Article extends BaseModel {
 	private String summary;
 	private String content;
 
+	/** 文章分类id */
+	private String typeId;
+	/** 文章分类名称 */
+	private String typeName;
+
+	/** 访问量 */
+	private int visits;
+
 	public String getId() {
 		return id;
 	}
@@ -46,6 +54,30 @@ public class Article extends BaseModel {
 
 	public void setContent(String content) {
 		this.content = content;
+	}
+
+	public String getTypeId() {
+		return typeId;
+	}
+
+	public void setTypeId(String typeId) {
+		this.typeId = typeId;
+	}
+
+	public String getTypeName() {
+		return typeName;
+	}
+
+	public void setTypeName(String typeName) {
+		this.typeName = typeName;
+	}
+
+	public int getVisits() {
+		return visits;
+	}
+
+	public void setVisits(int visits) {
+		this.visits = visits;
 	}
 
 }
